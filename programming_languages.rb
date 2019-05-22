@@ -36,7 +36,7 @@ def reformat_languages(languages)
     language.each do |name, attribute|
       if new_languages[name] == nil
           new_languages[name] = attribute
-        end
+      end
       new_languages[name][:style] = []
       new_languages[name][:style] << style
     end
