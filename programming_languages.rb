@@ -44,5 +44,3 @@ def reformat_languages(languages)
   new_languages[:javascript][:style] << :oo
   new_languages
 end
-
-
