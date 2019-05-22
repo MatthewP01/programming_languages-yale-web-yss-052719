@@ -34,9 +34,9 @@ def reformat_languages(languages)
   new_languages = {}
   languages.each do |style, language|
     language.each do |name, attribute|
-      # if new_languages[name] == nil
-      #     new_languages[name] = attribute
-      # end
+      if new_languages[name] == nil
+          new_languages[name] = attribute
+      end
       new_languages[name][:style] = []
       new_languages[name][:style] << style
     end
